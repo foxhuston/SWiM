@@ -1,7 +1,11 @@
 cmake_minimum_required (VERSION 2.8)
 project (swim)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PAH} "${CMAKE_SOURCE_DIR}/cmake/modules/")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules/")
+
+if (CMAKE_COMPILER_IS_GNUCXX)
+    add_definitions (-std=c++0x)
+endif()
 
 find_package (OpenGL REQUIRED)
 find_package (GLEW REQUIRED)

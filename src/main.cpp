@@ -6,5 +6,8 @@
 #include <X11/X.h>
 
 int main( int argc, char **argv ) {
+    auto test = "This is excellent!";
+
+    std::cout << test << std::endl;
     return 0;
 }
