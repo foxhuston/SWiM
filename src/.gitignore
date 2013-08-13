@@ -1,0 +1,10 @@
+# Ignore Ninja files
+*.ninja*
+
+# Ignore CMake cruft
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles
+
+# Ignore build output
+swim
